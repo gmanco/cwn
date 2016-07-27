@@ -1,3 +1,5 @@
+# CWN: An Expectation-Maximization framework for Influence-Based Network Oblivious Community Detection
+
 CWN is a stochastic framework for detecting social communities when the social graph is not available, but instead we have access to a log of user activity, that is a dataset of tuples (u, i, t) recording the fact that user u “adopted” item i at time t.
 
 The framework assumes that the adoption of items is governed by an underlying diffusion process over the unobserved social network, and that such diffusion model is based on community-level influence. By fitting the model parameters to the user activity log, we learn the community membership and the level of influence of each user in each community. 
