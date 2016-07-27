@@ -23,14 +23,26 @@ Nicola Barbieri, Francesco Bonchi, Giuseppe Manco. 2016. Influence-based Network
     
     does clustering on the activation log (user that adopted the same items will be in the same cluster)
 
-If you want to run C-Rate:
+- The package
+    - src/cicm
+   
+   instantiates CWN to the Community-based Independent Cascade Model CIC
+
+- The package
+    - src/diffusionBased
+   
+   instantiates CWN to the survival model CRate  
+
+Each package contains a main class which can be executed. For example, If you want to run C-Rate:
 - the main class is src/diffusionBased/CommunityRate_Inference.java
 
-takes parameters
- -a <actionlog> -c <confFile> -k <nCommunities> -o <output> -maxIt <maxIt> -g <groundTruthCommunities>  -l <networkFile> 
-
-actionLog is the file with node activations  (resources/datasets/synthetic/s1/NR/fold1/actionLog)
-confFile describe the format of the actionLog (resources/datasets/synthetic/conf.inf)
-groundTruthCommunities is a mapping from node -> community
-networkFile specifies the network (u \t v) => u follows v
+  taking parameters
+  
+   -a actionlog -c confFile -k nCommunities -o output -maxIt maxIt -g groundTruthCommunities  -l networkFile
+  
+  where:
+   - actionLog is the file with node activations  (resources/datasets/synthetic/s1/NR/fold1/actionLog)
+   - confFile describe the format of the actionLog (resources/datasets/synthetic/conf.inf)
+   - groundTruthCommunities is a mapping from node -> community
+   - networkFile specifies the network (u \t v) => u follows v
 
