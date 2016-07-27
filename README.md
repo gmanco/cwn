@@ -11,7 +11,7 @@ More details on the approach can be found at
 Nicola Barbieri, Francesco Bonchi, Giuseppe Manco. 2016. Influence-based Network-oblivious Community Detection. ACM Trans. Intell. Syst. Technol. 
 
 The package includes a synthetic dataset 
-/resources/datasets/synthetic/s1/NR/fold1/actionLog
+- /resources/datasets/synthetic/s1/NR/fold1/actionLog
 
 If you want to run C-Rate:
 - the main class is src/diffusionBased/CommunityRate_Inference.java
