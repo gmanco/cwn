@@ -10,11 +10,22 @@ More details on the approach can be found at
 
 Nicola Barbieri, Francesco Bonchi, Giuseppe Manco. 2016. Influence-based Network-oblivious Community Detection. ACM Trans. Intell. Syst. Technol. 
 
-The package includes a synthetic dataset 
-- /resources/datasets/synthetic/s1/NR/fold1/actionLog
+- The package includes a synthetic dataset 
+   - /resources/datasets/synthetic/s1/NR/fold1/actionLog
+
+- The package 
+    - src/propagationGenerator 
+
+    contains classes to generate synthetic propagation given a network file
+
+- The package 
+    - src/topicBased 
+    
+    does clustering on the activation log (user that adopted the same items will be in the same cluster)
 
 If you want to run C-Rate:
 - the main class is src/diffusionBased/CommunityRate_Inference.java
+
 takes parameters
  -a <actionlog> -c <confFile> -k <nCommunities> -o <output> -maxIt <maxIt> -g <groundTruthCommunities>  -l <networkFile> 
 
@@ -23,6 +34,3 @@ confFile describe the format of the actionLog (resources/datasets/synthetic/conf
 groundTruthCommunities is a mapping from node -> community
 networkFile specifies the network (u \t v) => u follows v
 
-The package src/propagationGenerator contains classes to generate synthetic propagation given a network file
-
-The package src/topicBased does clustering on the activation log (user that adopted the same items will be in the same cluster)
