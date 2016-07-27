@@ -41,8 +41,9 @@ Each package contains a main class which can be executed. For example, If you wa
    -a actionlog -c confFile -k nCommunities -o output -maxIt maxIt -g groundTruthCommunities  -l networkFile
   
   where:
-   - actionLog is the file with node activations  (resources/datasets/synthetic/s1/NR/fold1/actionLog)
-   - confFile describe the format of the actionLog (resources/datasets/synthetic/conf.inf)
-   - groundTruthCommunities is a mapping from node -> community
-   - networkFile specifies the network (u \t v) => u follows v
+   - actionLog is the file with node activations  (e.g. resources/datasets/synthetic/s1/NR/fold1/actionLog)
+   - confFile describe the format of the actionLog (e.g. resources/datasets/synthetic/conf.inf)
+   - maxIt specifies the maximum number of iterations
+   - groundTruthCommunities is a mapping from node -> community (e.g. resources/datasets/synthetic/s1/NR/fold1/community.dat)
+   - networkFile specifies the network (u \t v) => u follows v (e.g. resources/datasets/synthetic/s1/NR/fold1/network.dat)
 
